@@ -6,9 +6,7 @@ import {useState} from 'react'
 
 function App() {
   const [inputValue , setInputValue] = useState('');
-
   
-
   return (
     <>
       <SearchBox inputValue={inputValue} setInputValue={setInputValue}></SearchBox>

@@ -9,8 +9,8 @@ const Card = (props) => {
         <div>
             <ul>
                 {
-                    props.inputValue ?
-                    
+                    props.inputValue
+                    ?
                     searchLibrary
                     .filter((val) => 
                         val.startsWith(props.inputValue)
@@ -18,7 +18,6 @@ const Card = (props) => {
                     .map(val =>(
                         <li>{val}</li>
                     ))
-                    
                     : 
                     <p>No search results available</p>
                 }
